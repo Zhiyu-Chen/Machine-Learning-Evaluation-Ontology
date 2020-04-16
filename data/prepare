@@ -1,0 +1,5 @@
+shuf all.data > data
+head -10 data > test
+sed -n '11,20p' data > valid
+sed -n '21,30p' data > train
+#tail +5 data > train
