@@ -320,7 +320,7 @@ for pid in paper_result:
                             if idx + 1 == current_entity[1] and len(entity_entries) != 0:
                                 current_entity = entity_entries.pop(0)
 
-                        elif idx + 1 ==  sent.end and idx+1 != sent.end:
+                        elif idx + 1 ==  sent.end and idx+1 != current_entity[1]:
                             data_pairs.append([sent[idx-sent.start].text, 'SENT_END'])
                         idx += 1
 
