@@ -205,9 +205,11 @@ for each paper id:
     scores should be matched only in tables
 '''
 sim_thred = 50
+output_mode = 'key_sent' # all_sec / key_sec
 preader = PaperReader()
 paper_result = preader.get_paper_result()
 paper_text, paper_table = preader.read_papers()
+f_out = open('./data/all.data','w')
 for pid in paper_result:
     print(pid)
     if pid not in paper_text:
@@ -236,6 +238,7 @@ for pid in paper_result:
         entity_entries = []  # (start,end,entity type)
         results = paper_result[pid]
         results = results.split('$')
+        has_dataset = False
         for result in results:
             seps = result.split('#')
             task,dataset,metric,score = seps[:4]
@@ -246,44 +249,91 @@ for pid in paper_result:
                 #sim = textdistance.jaccard(np.text.lower(),task.replace('_',' ').lower())
                 if sim > sim_thred:
                     entity_entries.append([np.start,np.end,'task'])
-                sim = fuzz.ratio(np.text.lower(), dataset.replace('_',' ').lower())
+                sim = fuzz.ratio(np.text.lower(), dataset.lower())
                 #sim = textdistance.jaccard(np.text.lower(), dataset.replace('_',' ').lower())
-                if sim > sim_thred:
+                if sim == 100:
                     entity_entries.append([np.start, np.end, 'dataset'])
+                    has_dataset= True
+                    #print("{0}:{1}:{2}".format(np.text,dataset,sim ))
                 sim = fuzz.ratio(np.text.lower(), metric.replace('_',' ').lower())
                 #sim = textdistance.jaccard(np.text.lower(), metric.replace('_',' ').lower())
                 if sim > sim_thred:
                     entity_entries.append([np.start, np.end, 'metric'])
+                    #print("{0}:{1}:{2}".format(np.text, metric, sim))
 
         entity_entries.sort(key=lambda x: x[0])
-        #print(entity_entries)
+
         #begin to output every token
         if len(entity_entries) == 0:
-            current_entity = [len(doc),len(doc)]
+            current_entity = [len(doc)+1,len(doc)+1]
         else:
             current_entity = entity_entries.pop(0)
-        idx = 0
-        while idx < len(doc):
-            if idx == 0:
-                data_pairs.append([doc[idx].text,'SEC_START'])
-            elif idx + 1 < len(doc):
-                #current token belongs to an entity
-                if  current_entity[0] <= idx <  current_entity[1]:
-                    data_pairs.append([doc[idx].text,current_entity[2]])
-                else:
-                    data_pairs.append([doc[idx].text, 'SEC_CONTENT'])
-                #finish tag the entity
-                if idx+1 == current_entity[1] and len(entity_entries) != 0:
-                    current_entity = entity_entries.pop(0)
 
-            elif idx + 1 == len(doc):
-                data_pairs.append([doc[idx].text, 'SEC_END'])
-            idx += 1
+        if output_mode == 'all_sec':
+            idx = 0
+            while idx < len(doc):
+                if idx == 0:
+                    data_pairs.append([doc[idx].text,'SEC_START'])
+                elif idx + 1 < len(doc):
+                    #current token belongs to an entity
+                    if current_entity[0] == idx:
+                        data_pairs.append([doc[idx].text, current_entity[2]+"START"])
+                    elif idx ==  current_entity[1]-1:
+                        data_pairs.append([doc[idx].text, current_entity[2] + "END"])
+                    elif  current_entity[0] < idx+1 <  current_entity[1]:
+                        data_pairs.append([doc[idx].text,current_entity[2]])
+                    else:
+                        data_pairs.append([doc[idx].text, 'SEC_CONTENT'])
+                    #finish tag the entity
+                    if idx+1 == current_entity[1] and len(entity_entries) != 0:
+                        current_entity = entity_entries.pop(0)
+
+                elif idx + 1 == len(doc):
+                    data_pairs.append([doc[idx].text, 'SEC_END'])
+                idx += 1
+        if output_mode == 'key_sent':
+            sents = list(doc.sents)
+            for sent in sents:
+                has_ent = False
+                if len(sent) < 3:
+                    continue
+                #if the sentence does not have an entity, skip
+                if sent.start <= current_entity[0] and sent.end >=  current_entity[1]:
+                    idx = sent.start
+
+                    while idx < sent.end:
+                        if idx == sent.start and idx != current_entity[0]:
+                            data_pairs.append([sent[idx-sent.start].text, 'SENT_START'])
+                        elif idx + 1 < sent.end:
+                            # current token belongs to an entity
+                            if current_entity[0] == idx:
+                                has_ent = True
+                                data_pairs.append([sent[idx-sent.start].text, current_entity[2] + "START"])
+                                #print("{0}:{1}".format(current_entity[2],sent[idx-sent.start].text))
+                            elif idx == current_entity[1] - 1:
+                                data_pairs.append([sent[idx-sent.start].text, current_entity[2] + "END"])
+                            elif current_entity[0] < idx + 1 < current_entity[1]:
+                                data_pairs.append([sent[idx-sent.start].text, current_entity[2]])
+                            else:
+                                data_pairs.append([sent[idx-sent.start].text, 'SENT_CONTENT'])
+                            # finish tag the entity
+                            if idx + 1 == current_entity[1] and len(entity_entries) != 0:
+                                current_entity = entity_entries.pop(0)
+
+                        elif idx + 1 ==  sent.end and idx+1 != sent.end:
+                            data_pairs.append([sent[idx-sent.start].text, 'SENT_END'])
+                        idx += 1
+
+
     #write into files
-    f_out = open('./data/{}.data'.format(pid),'w')
+    f_out.write(pid + '\t')
     for pair in data_pairs:
-        f_out.write(pair[0] + '\t' + pair[1] + '\n')
-    f_out.close()
+        f_out.write(pair[0] + '\\tag' + pair[1] + '\t')
+        #print(pair[0] + '\t' + pair[1])
+    f_out.write('\n')
+
+
+f_out.close()
 
 
 
