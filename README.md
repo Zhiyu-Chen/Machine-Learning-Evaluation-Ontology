@@ -29,5 +29,6 @@ Pipeline Demo
 - cd PipelineDemo
 - to prepare an input paper, run python3 InputDemo.py --input_file data/test --output_file data2/demo.input --paper_id 1
 - to extract TDM triples from paper that are used to build the knowledge graph, run python3 extract_triples_from_paper.py --CharToIdx data/train.char_to_idx --WordToIdx data/train.word_to_idx --TagToIdx data/train.tag_to_idx --test data/demo.input --checkpoint data/phase1_model.epoch100 --pretrained_embedding path_to/glove.6B.Xd.txt --phase2_model Relation_Extraction_IR/stage2_model.pt
+- to extract triples from all the papers collection, and form the input file kb_input.txt to the knowledge base, run python3 extract_all_triples.py   
 
 
