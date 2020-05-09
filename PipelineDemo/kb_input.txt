@@ -1,0 +1,269 @@
+1712.03609 question_answering#null#em
+1801.06146 text_classification#dbpedia#the error$text_classification#dbpedia#scratch$text_classification#dbpedia#cut f rac$text_classification#dbpedia#error rates$text_classification#yelp#the error$text_classification#imdb#cut f rac$text_classification#yelp#cut f rac$text_classification#imdb#the error$text_classification#imdb#scratch$text_classification#yelp#scratch
+1705.02364 semantic_textual_similarity#sick - r#our representations$semantic_textual_similarity#sick - e#universal representations$semantic_textual_similarity#sick - r#universal representations$semantic_textual_similarity#sick - r#sentence representations$semantic_textual_similarity#sick - r#the representations$semantic_textual_similarity#sick - e#our representations$semantic_textual_similarity#sick - e#the representations$semantic_textual_similarity#sick - e#the two representations$semantic_textual_similarity#sick - e#sentence representations$semantic_textual_similarity#sick - r#the two representations
+D17-1130 amr_parsing#null#the newswire section$amr_parsing#null#the newswire test
+1611.01603 question_answering#squad#relu$question_answering#squad#vectors$question_answering#squad#m$question_answering#squad#ethernet$question_answering#squad#em$question_answering#squad#terms$question_answering#squad#the words$question_answering#squad#them$question_answering#squad#the word$question_answering#squad#error
+1606.01781 text_classification#null#the error rate
+1711.04436 sql_parsing#null#acc$sql_parsing#null#acc agg$sql_parsing#null#acc sel$sql_parsing#null#a set$sql_parsing#null#practice$sql_parsing#null#access$sql_parsing#null#each step
+1609.09106 language_modeling#penn treebank#the hyper - parameters$language_modeling#penn treebank#the first 90 m characters$language_modeling#penn treebank#certain parameters$language_modeling#penn treebank#learnable parameters$language_modeling#penn treebank#the parameters$language_modeling#penn treebank#written characters$language_modeling#penn treebank#its performance$language_modeling#penn treebank#the last 5 m characters$language_modeling#penn treebank#fewer parameters$language_modeling#penn treebank#model parameters
+1803.08240 language_modeling#penn treebank#character$language_modeling#penn treebank#the character - level dataset$language_modeling#penn treebank#both character - level$language_modeling#penn treebank#both word - and character - level tasks$language_modeling#penn treebank#the hyperparameters$language_modeling#penn treebank#numbers$language_modeling#penn treebank#hyperparameters$language_modeling#penn treebank#characters$language_modeling#penn treebank#both a word - and character - level form$language_modeling#penn treebank#far more complex character
+1809.08370 named_entity_recognition#ccgbank#accuracy$ccg_supertagging#ccgbank#accuracy$ccg_supertagging#ccgbank#the accuracy$machine_translation#ccgbank#accuracy$named_entity_recognition#ccgbank#the accuracy$ccg_supertagging#ccgbank#train accuracy$named_entity_recognition#ccgbank#train accuracy$machine_translation#ccgbank#the accuracy$ccg_supertagging#ccgbank#better dev accuracy$dependency_parsing#ccgbank#the accuracy
+trouillon16 relation_prediction#null#mrr$relation_prediction#null#( mrr
+Y15-1009 relationship_extraction#null#a f1$relationship_extraction#null#f$relationship_extraction#null#f1
+1611.01604 question_answering#squad#f1$question_answering#squad#em
+C16-1116 text_classification#null#person
+D16-1257 dependency_parsing#null#f$constituency_parsing#null#us$dependency_parsing#null#lack$dependency_parsing#null#us$constituency_parsing#null#lack$constituency_parsing#null#f
+P18-2027 summarization#gigaword#rouge$summarization#gigaword#relu$summarization#gigaword#rouge score
+1806.03489 named_entity_recognition#null#null
+1612.08083 language_modeling#null#the first input element$language_modeling#null#the parameters$language_modeling#null#respectively 55.6 and 29.4 perplexity$language_modeling#null#the elements$language_modeling#null#a validation set$language_modeling#null#data sparsity$language_modeling#null#the kernel width$language_modeling#null#the ability$language_modeling#null#better perplexities$language_modeling#null#the experiments
+1805.09655 dialogue_state_tracking#null#requests$dialogue_state_tracking#null#joint performance$dialogue_state_tracking#null#turn goal accuracy$dialogue_state_tracking#null#the joint goal accuracy$dialogue_state_tracking#null#joint goal tracking accuracy$dialogue_state_tracking#null#accuracy
+1707.07045 coreference_resolution#null#over 3 f1$coreference_resolution#null#1 f1$coreference_resolution#null#the average f1
+1412.6575 relation_prediction#null#null
+1807.03955 dependency_parsing#null#( pos$dependency_parsing#null#( mlp pos$dependency_parsing#null#l pos$dependency_parsing#null#pos$dependency_parsing#null#pos tags$dependency_parsing#null#pos tag$dependency_parsing#null#task$dependency_parsing#null#mlps$dependency_parsing#null#uas$dependency_parsing#null#ours
+1710.02772 question_answering#squad#e$question_answering#squad#fem$question_answering#squad#teams$question_answering#squad#them$question_answering#squad#f1
+1704.01444 sentiment_analysis#null#privacy$sentiment_analysis#null#the test accuracy
+1702.02098 named_entity_recognition#null#f1
+E17-1007 taxonomy_learning#null#( map$taxonomy_learning#null#ap$taxonomy_learning#null#( ap
+P17-1055 question_answering#null#• cnn / daily mail
+1709.04348 semantic_textual_similarity#null#model test accuracy$semantic_textual_similarity#null#account$semantic_textual_similarity#null#development accuracy$semantic_textual_similarity#null#the accuracy$semantic_textual_similarity#null#a query$semantic_textual_similarity#null#accuracy
+D17-1168 question_answering#null#51.3 % accuracy$question_answering#null#accuracy$question_answering#null#accuracies$question_answering#null#lowest$question_answering#null#an accuracy$question_answering#null#a much higher accuracy
+P11-1055 relationship_extraction relationship_extraction#null#null$relationship_extraction#null#null
+1808.04444 language_modeling#text8#a character$language_modeling#text8#a four character sequence$language_modeling#text8#the character sequence t$language_modeling#text8#the network parameters$language_modeling#text8#past characters$language_modeling#text8#434 characters
+1705.03122 machine_translation#null#plateau$machine_translation#null#bpe$machine_translation#null#bleu$machine_translation#null#0.5 bleu$machine_translation#null#1.6 bleu$machine_translation#null#1.9 bleu
+D18-1207 summarization#null#rouge - l$summarization#null#the rouge-2$summarization#null#the word$summarization#null#rouge
+1604.05529 part-of-speech_tagging#null#accuracy$part-of-speech_tagging#null#accuracies$part-of-speech_tagging#null#accuracy rates$part-of-speech_tagging#null#the accuracy$part-of-speech_tagging#null#their accuracies
+1702.03814 semantic_textual_similarity#quora question pairs#each character
+N18-1193 multimodal_emotion_recognition#iemocap#unweighted influence
+1703.00572 question_answering#squad#f$question_answering#squad#terms$question_answering#squad#em$question_answering#squad#them
+N18-1202 word_sense_disambiguation#null#f$machine_translation#null#f
+1609.07959 language_modeling#text8#22 m parameters$language_modeling#text8#learnable parameters$language_modeling#hutter prize#22 m parameters$language_modeling#hutter prize#learnable parameters$language_modeling#text8#hyperparameters$language_modeling#text8#the 10 % characters$language_modeling#hutter prize#the 10 % characters$language_modeling#text8#input characters$language_modeling#hutter prize#input characters$language_modeling#text8#the characters
+1508.03720 relationship_extraction#null#f
+P18-2028 summarization#null#r cr$summarization#null#f$summarization#null#r
+1809.03449 question_answering#squad#them
+1808.08762 natural_language_inference#scitail#the accuracy$natural_language_inference#scitail#an accuracy$natural_language_inference#scitail#a test accuracy$natural_language_inference#scitail#a hierarchy$natural_language_inference#scitail#the test accuracy$natural_language_inference#scitail#a development accuracy
+P17-1127 summarization#null#r
+D15-1062 relationship_extraction#null#f1
+P17-1052 text_classification#dbpedia#error rates$text_classification#dbpedia#: error rates$text_classification#yelp#error rates$text_classification#yelp#: error rates
+P18-2045 question_answering#story cloze test#accuracy$question_answering#story cloze test#the accuracy$question_answering#story cloze test#the average accuracy$question_answering#story cloze test#0.9 % inaccuracy$question_answering#story cloze test#account
+1804.09530 sentiment_analysis#null#accuracy$sentiment_analysis#null#mean accuracy$sentiment_analysis#null#oov accuracy$sentiment_analysis#null#convergence$sentiment_analysis#null#our only target
+D15-1136 amr_parsing#null#null
+1612.04211 question_answering#null#m$question_answering#null#term$question_answering#null#em
+N18-2015 question_answering#null#67.2 % accuracy$question_answering#null#the validation accuracy$question_answering#null#higher accuracy$question_answering#null#the increase inaccuracy$question_answering#null#better accuracy$question_answering#null#78 % accuracy$question_answering#null#the best accuracy$question_answering#null#a test - set accuracy$question_answering#null#accuracy$question_answering#null#high accuracy
+human question_answering#squad#null
+16137 grammatical_error_correction#null#f 0.5 score
+1712.01586 semantic_role_labeling#null#f1
+1603.01354 named_entity_recognition#null#acc$named_entity_recognition#null#accuracy$named_entity_recognition#null#97.55 % accuracy$named_entity_recognition part-of-speech_tagging#null#accuracy$named_entity_recognition part-of-speech_tagging#null#97.55 % accuracy$named_entity_recognition part-of-speech_tagging#null#pos accuracy$named_entity_recognition#null#a crf layer$named_entity_recognition#null#f1$named_entity_recognition#null#pos accuracy$named_entity_recognition part-of-speech_tagging#null#acc
+N18-1158 summarization#null#( rouge$summarization#null#rouge - l$summarization#null#rouge$summarization#null#rouge f 1 scores$summarization#null#( e.g. , rouge$summarization#null#metrics$summarization#null#rouge-1$summarization#null#namely rouge
+context-dependent-sentiment-analysis-in-user-generated-videos multimodal_emotion_recognition#iemocap#each utterance$multimodal_emotion_recognition#mosi#each utterance$multimodal_sentiment_analysis#iemocap#each utterance$multimodal_emotion_recognition#iemocap#account$multimodal_sentiment_analysis#iemocap#account$multimodal_sentiment_analysis#mosi#each utterance$multimodal_emotion_recognition#mosi#account$multimodal_sentiment_analysis#mosi#account$multimodal_emotion_recognition#iemocap#a higher accuracy$multimodal_emotion_recognition#mosi#a higher accuracy
+P17-1108 summarization#null#rouge$summarization#null#related work$summarization#null#the words$summarization#null#the word$summarization#null#vectors$summarization#null#parameters
+1606.03777 dialogue_state_tracking#null#joint slu / dst research$dialogue_state_tracking#null#requests$dialogue_state_tracking#null#the nbt models ' goal accuracy$dialogue_state_tracking#null#joint goal accuracy$dialogue_state_tracking#null#both joint goal
+1705.05952 part-of-speech_tagging#ud#an arc$part-of-speech_tagging#ud#accuracies$part-of-speech_tagging#ud#the best accuracy$part-of-speech_tagging#ud#the highest mixed accuracy$part-of-speech_tagging#ud#the mixed accuracy
+P17-1089 sql_parsing#atis#existing datasets$sql_parsing#atis#every span$sql_parsing#atis#early stopping$sql_parsing#atis#equations$sql_parsing#atis#sql query tokens$sql_parsing#atis#the second assist$sql_parsing#atis#question / answer pairs$sql_parsing#atis#sql 's querying capabilities$sql_parsing#atis#user 's questions$sql_parsing#atis#new user questions
+D16-1041 taxonomy_learning#null#p@k$taxonomy_learning#null#( map$taxonomy_learning#null#( mrr$taxonomy_learning#null#mrr
+D17-1120 word_sense_disambiguation#null#f
+Q16-1023 dependency_parsing#null#use$dependency_parsing#null#pos - tags$dependency_parsing#null#pos tags$dependency_parsing#null#( pos$dependency_parsing#null#pos$dependency_parsing#null#layers$dependency_parsing#null#loss$dependency_parsing#null#93.1 uas
+1710.10723 question_answering#squad#them
+C16-1146 sentiment_analysis#sentihood#aspects$sentiment_analysis#sentihood#the$sentiment_analysis#sentihood#aspect$sentiment_analysis#sentihood#respect$sentiment_analysis#sentihood#the aspects$sentiment_analysis#sentihood#the aspect$sentiment_analysis#sentihood#aspect " service$sentiment_analysis#sentihood#both aspect$sentiment_analysis#sentihood#each aspect
+D18-1440 summarization#null#a mother$summarization#null#rouge$summarization#null#terms$summarization#null#rouge-1$summarization#null#both rouge$summarization#null#all rouge$summarization#null#metric scores$summarization#null#parameters
+1504.05070 sentiment_analysis#subj#a hierarchy
+P18-1230 word_sense_disambiguation#null#f
+1801.08290 question_answering#newsqa#f$question_answering#newsqa#m$question_answering#newsqa#them
+P09-1113 relationship_extraction#null#null
+P15-2041 ccg_supertagging#ccgbank#accuracy$ccg_supertagging#ccgbank#the accuracy$ccg_supertagging#ccgbank#parsing accuracies$ccg_supertagging#ccgbank#1-best accuracies$ccg_supertagging#ccgbank#the best known accuracy$ccg_supertagging#ccgbank#high tagging accuracy$ccg_supertagging#ccgbank#the accuracies$ccg_supertagging#ccgbank#multi - tagging accuracy$ccg_supertagging#ccgbank#higher accuracy$ccg_supertagging#ccgbank#level accuracies
+1805.06939 common_sense#null#the crossentropy
+D18-1205 summarization#null#-0.63 rouge - l$summarization#null#mementos$summarization#null#rouge scores$summarization#null#the words$summarization#null#some work$summarization#null#vector$summarization#null#parameters
+N18-2108 coreference_resolution#null#over 3 f1$coreference_resolution#null#average f1$coreference_resolution#null#g 1 i$coreference_resolution#null#the average f1
+Q17-1029 constituency_parsing#null#f
+P18-4013 named_entity_recognition#null#a crf layer$part-of-speech_tagging#null#a crf layer$chunking#null#a crf layer
+E17-2047 summarization#gigaword#relu
+C16-1329 text_classification#sst-2#accuracy$text_classification#sst-2#account$text_classification#sst-2#a hierarchy$text_classification#sst-2#highest accuracy$text_classification#sst-2#the best accuracy$sentiment_analysis#sst-2#the best accuracy$sentiment_analysis#sst-2#accuracy$sentiment_analysis#sst-2#highest accuracy$sentiment_analysis#sst-2#account$sentiment_analysis#sst-2#a hierarchy
+S17-2126 sentiment_analysis#null#null
+1611.04230 summarization#null#the work$summarization#null#the term$summarization#null#director$summarization#null#the form$summarization#null#rouge recall$summarization#null#the words$summarization#null#terms
+P18-1161 question_answering#null#quasar - t$question_answering#null#both quasar - t$question_answering#null#em$question_answering#null#the start
+owoputi_etal.naacl13 part-of-speech_tagging#social media#90 % to 93 % accuracy$part-of-speech_tagging#social media#the tagger 's accuracy$part-of-speech_tagging#social media#93.2 % accuracy$part-of-speech_tagging#social media#85.3 % accuracy$part-of-speech_tagging#social media#a many - to - one accuracy$part-of-speech_tagging#social media#0.5 % worse accuracy$part-of-speech_tagging#social media#tagging accuracy$part-of-speech_tagging#social media#an accuracy$part-of-speech_tagging#social media#relatively low accuracy$part-of-speech_tagging#social media#the accuracy
+S17-2080 stance_detection stance_detection#rumoureval#accuracy$stance_detection#rumoureval#accuracy$stance_detection stance_detection#rumoureval#an accuracy$stance_detection stance_detection#rumoureval#a reasonable accuracy$stance_detection#rumoureval#a reasonable accuracy$stance_detection stance_detection#rumoureval#classification accuracy$stance_detection#rumoureval#an accuracy$stance_detection#rumoureval#classification accuracy$stance_detection#rumoureval#the highest accuracy$stance_detection stance_detection#rumoureval#the highest accuracy
+N18-1055 grammatical_error_correction#null#null
+1802.05365 semantic_role_labeling#null#f$named_entity_recognition#null#f$named_entity_recognition#null#accuracies$coreference_resolution#null#a cnn character$sentiment_analysis#null#f$coreference_resolution#null#the overall accuracy$coreference_resolution#null#accuracy$coreference_resolution#null#f$semantic_role_labeling#null#accuracies$coreference_resolution#null#higher accuracies
+W15-4313 lexical_normalization#null#insertion$lexical_normalization#null#intersection$lexical_normalization#null#subsection$lexical_normalization#null#section$lexical_normalization#null#repetition$lexical_normalization#null#the prediction$lexical_normalization#null#lower recall$lexical_normalization#null#more challenging$lexical_normalization#null#higher precision$lexical_normalization#null#word recognition
+1804.09849 machine_translation#null#glu$machine_translation#null#bleu scores$machine_translation#null#bleu trans$machine_translation#null#0.7 bleu$machine_translation#null#0.6 bleu
+1802.00923 multimodal_sentiment_analysis#null#each recurrence$multimodal_sentiment_analysis#null#accuracy ac$multimodal_sentiment_analysis#null#the accuracy
+1707.03058 constituency_parsing#null#: f1$constituency_parsing#null#f1
+1709.00103 sql_parsing#wikisql#w c x$sql_parsing#wikisql#each step$sql_parsing#wikisql#acc ex$sql_parsing#wikisql#access$sql_parsing#wikisql#race
+1707.01476 relation_prediction#wn18rr#( mrr$relation_prediction#fb15k-237#( mrr$relation_prediction#wn18rr#hits@10$relation_prediction#fb15k-237#hits@10
+1704.07415 question_answering#null#f$question_answering#null#them$question_answering#null#e
+D17-1222 summarization#gigaword#rouge score
+1705.02798 question_answering#squad#them$question_answering#squad#team$question_answering#squad#terms$question_answering#squad#e
+htyo14 dialogue_state_tracking#null#a restaurant$dialogue_state_tracking#null#requested acc$dialogue_state_tracking#null#the top accuracies$dialogue_state_tracking#null#initial trackers$dialogue_state_tracking#null#accuracies$dialogue_state_tracking#null#accuracy
+K16-1006 word_sense_disambiguation#null#null
+1702.08400 sentiment_analysis#null#the accuracy$sentiment_analysis#null#accuracy$sentiment_analysis#null#electronics$sentiment_analysis#null#high accuracy$sentiment_analysis#null#mean accuracy
+P16-1001 amr_parsing#ldc2014t12#the newswire corpus
+blocksparsepaper sentiment_analysis#null#null
+D18-1238 question_answering#narrativeqa#the unigram$question_answering#searchqa#the unigram$question_answering#searchqa#gether$question_answering#narrativeqa#gether$question_answering#searchqa#center$question_answering#narrativeqa#center$question_answering#narrativeqa#em$question_answering#searchqa#em$question_answering#narrativeqa#f$question_answering#searchqa#f
+W17-4422 named_entity_recognition#null#f
+P15-1061 relationship_extraction#null#a f1$relationship_extraction#null#an f1$relationship_extraction#null#f
+1709.04109 part-of-speech_tagging#null#a crf layer$part-of-speech_tagging#null#the accuracy$named_entity_recognition#null#a crf layer$named_entity_recognition#null#the accuracy
+50 temporal_information_extraction#timebank#an f1
+1805.06280 dialogue_act_classification#null#an accuracy$dialogue_act_classification#null#accuracy$dialogue_act_classification#null#each utterance$dialogue_act_classification#null#high accuracy$dialogue_act_classification#null#human accuracy$dialogue_act_classification#null#the 73.9 % accuracy$dialogue_act_classification#null#73.1 % accuracy$dialogue_act_classification#null#3 % higher accuracy
+P18-1061 summarization#null#the score$summarization#null#rouge$summarization#null#the words$summarization#null#rouge-2 f1$summarization#null#the rouge-2 f1 score$summarization#null#terms
+1808.10143 language_modeling#null#the perplexity$language_modeling#null#perplexities$language_modeling#null#the parameters$language_modeling#null#timestep t$language_modeling#null#validation$language_modeling#null#the ptb validation$language_modeling#null#this experiment
+1703.04617 question_answering#null#f1$question_answering#null#em
+N18-2053 relation_prediction#wn18rr#mrr$relation_prediction#fb15k-237#mrr
+D13-1204 dependency_parsing#null#use$dependency_parsing#null#asr$dependency_parsing#null#us$dependency_parsing#null#squares$dependency_parsing#null#bags$dependency_parsing#null#ours$dependency_parsing#null#updates
+1804.06512 dialogue_state_tracking#null#null
+1805.08237 part-of-speech_tagging#null#accuracy$part-of-speech_tagging#null#accuracy scores$part-of-speech_tagging#null#better accuracy$part-of-speech_tagging#null#accuracy søgaard$part-of-speech_tagging#null#the tagging accuracy$part-of-speech_tagging#null#the accuracy$part-of-speech_tagging#null#obtains accuracies$part-of-speech_tagging#null#competitive accuracy$part-of-speech_tagging#null#highest accuracy$part-of-speech_tagging#null#the art accuracies
+1703.06345 part-of-speech_tagging#penn treebank#an tagging accuracy$named_entity_recognition#penn treebank#f$part-of-speech_tagging#penn treebank#f$part-of-speech_tagging#penn treebank#accuracies$part-of-speech_tagging#penn treebank#a hierarchy$named_entity_recognition#penn treebank#an tagging accuracy$named_entity_recognition#penn treebank#a hierarchy$named_entity_recognition#penn treebank#accuracies
+C16-1119 relationship_extraction#null#f
+1704.04565 null#null#accuracy
+S13-2002 temporal_information_extraction#null#the temporal type$temporal_information_extraction#null#the tempeval organizers$temporal_information_extraction#null#tempeval tasks
+D18-1441 summarization#null#rouge evaluation$summarization#null#mementos$summarization#null#some work$summarization#null#the words$summarization#null#parameters
+N18-2009 summarization#null#parameters$summarization#null#the score$summarization#null#( +2.5 rouge-1$summarization#null#( +1.3 rouge-1
+D18-1088 summarization#null#rouge-2$summarization#null#time
+1602.02373 text_classification#imdb#accuracy$text_classification#imdb#memory$text_classification#imdb#poorer accuracy$sentiment_analysis#imdb#accuracy$sentiment_analysis#imdb#poorer accuracy$text_classification#imdb#the error rate$text_classification#imdb#poor accuracy$text_classification#imdb#error rates$text_classification#imdb#higher accuracy$sentiment_analysis#imdb#higher accuracy
+1609.01704 language_modeling#null#hyperparameters$language_modeling#null#other forms$language_modeling#null#the next target character$language_modeling#null#the characters$language_modeling#null#the model parameter$language_modeling#null#special characters$language_modeling#null#the last character$language_modeling#null#the first 90 m characters$language_modeling#null#all the characters$language_modeling#null#a character
+N16-1024 constituency_parsing#null#null
+1804.07461 natural_language_inference#null#accuracy$natural_language_inference#null#the rubric$natural_language_inference#null#the art$natural_language_inference#null#the failure$natural_language_inference#null#the authors$natural_language_inference#null#accuracies$natural_language_inference#null#both accuracy$natural_language_inference#null#( e.g. , accuracy
+1806.02847 common_sense#winograd schema challenge#inadequacy$common_sense#winograd schema challenge#accuracy$common_sense#winograd schema challenge#70.0 % accuracy$common_sense#winograd schema challenge#63.7 % accuracy$common_sense#winograd schema challenge#a remarkable accuracy$common_sense#winograd schema challenge#2 % accuracy$common_sense#winograd schema challenge#the highest accuracy$common_sense#winograd schema challenge#52.8 % accuracy$common_sense#winograd schema challenge#62.6 % accuracy$common_sense#winograd schema challenge#best accuracy
+D18-1274 grammatical_error_correction#null#null
+E17-1010 word_sense_disambiguation#null#null
+D16-1065 amr_parsing#null#do buf ← n u
+1806.05516 text_classification#subj#the accuracy$text_classification#subj#hereon$text_classification#subj#errors$sentiment_analysis#subj#errors$sentiment_analysis#subj#slight errors$text_classification#subj#slight errors$text_classification#subj#the accuracies$sentiment_analysis#subj#hereon$text_classification#subj#vector$text_classification#subj#the base cnn accuracy
+1603.01547 question_answering#null#e$question_answering#null#f$question_answering#null#them
+P17-1044 semantic_role_labeling#null#f$semantic_role_labeling#null#96 f1$semantic_role_labeling#null#78 f1
+K16-1028 summarization#gigaword#rouge$summarization#gigaword#the words$summarization#gigaword#the word$summarization#gigaword#time - step
+P08-1076 chunking#null#null
+P18-1013 summarization#null#the work$summarization#null#director$summarization#null#our goal$summarization#null#stoetter$summarization#null#rouge$summarization#null#extractor$summarization#null#rouge - recall$summarization#null#rouge-2$summarization#null#full - length rouge-1
+D12-1042 relationship_extraction#null#10 %
+E17-1051 amr_parsing#null#smatch score$amr_parsing#null#smatch$amr_parsing#null#the smatch score$amr_parsing#null#the smatch scores$amr_parsing#null#the first match$amr_parsing#null#a teacher$amr_parsing#null#research
+S18-1116 taxonomy_learning#null#map$taxonomy_learning#null#mrr
+P16-1223 question_answering#null#the recent cnn / daily mail$question_answering#null#daily mail$question_answering#null#67.9 % accuracy$question_answering#null#accuracies$question_answering#null#the accuracy$question_answering#null#an accuracy
+N15-1067 dependency_parsing#null#uas$dependency_parsing#null#ddas$dependency_parsing#null#us$dependency_parsing#null#sums$dependency_parsing#null#use$dependency_parsing#null#our case
+clin27.paper lexical_normalization#lexnorm2015#precision$lexical_normalization#lexnorm2015#section$lexical_normalization#lexnorm2015#the highest accuracy$lexical_normalization#lexnorm2015#previous$lexical_normalization#lexnorm2015#position$lexical_normalization#lexnorm2015#recall$lexical_normalization#lexnorm2015#previous work$lexical_normalization#lexnorm2015#a high accuracy$lexical_normalization#lexnorm2015#the decision$lexical_normalization#lexnorm2015#some preprocessing
+1808.08644 relation_prediction#null#null
+1611.05774 dependency_parsing#null#us$dependency_parsing#null#use$dependency_parsing#null#40.4 uas$constituency_parsing#null#use$constituency_parsing#null#us$constituency_parsing#null#49.8 uas$dependency_parsing#null#94.6 las$constituency_parsing#null#94.6 las$constituency_parsing#null#40.4 uas$dependency_parsing#null#49.8 uas
+1806.00187 machine_translation#null#bpe$machine_translation#null#29.3 bleu$machine_translation#null#table$machine_translation#null#bleu
+S18-1147 taxonomy_learning#null#( mrr$taxonomy_learning#null#( p@5$taxonomy_learning#null#( p@3$taxonomy_learning#null#( map
+1808.10792 summarization#null#easter$summarization#null#rouge$summarization#null#theory$summarization#null#rouge - l score$summarization#null#the word$summarization#null#rouge-1$summarization#null#method$summarization#null#either corpus$summarization#null#20.6 rouge - l$summarization#null#parameters
+P15-2047 relationship_extraction#null#null
+N18-1064 summarization#gigaword#rouge f1 scores
+D13-1090 semantic_textual_similarity#null#paraphrase classification$semantic_textual_similarity#null#racy$semantic_textual_similarity#null#the matrix factorization$semantic_textual_similarity#null#this representation$semantic_textual_similarity#null#supervised information$semantic_textual_similarity#null#this factorization$semantic_textual_similarity#null#79.76 % accuracy$semantic_textual_similarity#null#supervised classification$semantic_textual_similarity#null#matrix factorizations$semantic_textual_similarity#null#a latent representation
+1810.04805 named_entity_recognition#squad#97%-98 % accuracy$common_sense#squad#97%-98 % accuracy$named_entity_recognition#squad#a strict accuracy improvement$named_entity_recognition#swag#97%-98 % accuracy$common_sense#swag#97%-98 % accuracy$common_sense#squad#them$common_sense#squad#elmo$common_sense#squad#context$common_sense#squad#terms$named_entity_recognition#swag#a strict accuracy improvement
+S17-2157 amr_parsing#null#smatch$amr_parsing#null#59 % smatch$amr_parsing#null#98.7 % smatch$amr_parsing#null#minibatch sgd
+P16-2038 ccg_supertagging#null#a hierarchy$chunking#null#a hierarchy$ccg_supertagging#null#f$chunking#null#account$ccg_supertagging#null#account$chunking#null#f
+1804.00079 semantic_textual_similarity#sick - r#our representations$semantic_textual_similarity#sick - r#similar representations$semantic_textual_similarity#sick - r#their representations$semantic_textual_similarity#sick - r#the representations$semantic_textual_similarity#sick - r#our sentence representations$semantic_textual_similarity#sick - r#pearson correlation$semantic_textual_similarity#sick - r#representations$semantic_textual_similarity#sick - r#the primary contribution$semantic_textual_similarity#sick - r#the sentence representations$semantic_textual_similarity#sick - r#sentence representations
+S16-1186 amr_parsing#ldc2015e86#smatch$amr_parsing#ldc2015e86#first match$amr_parsing#ldc2015e86#• sentence match$amr_parsing#ldc2015e86#55 % f 1 smatch$amr_parsing#ldc2015e86#67 % f 1 smatch$amr_parsing#ldc2015e86#no match$amr_parsing#ldc2015e86#56 % f 1 smatch
+1611.01578 language_modeling#null#number$language_modeling#null#numbers$language_modeling#null#hyperparameters$language_modeling#null#learnable parameters$language_modeling#null#the hyperparameters$language_modeling#null#some parallels$language_modeling#null#better architectures$language_modeling#null#input pairs$language_modeling#null#trainable parameters$language_modeling#null#the parameters
+1710.10504 question_answering#squad#terms
+1711.04434 summarization#null#rouge$summarization#null#the rouge
+5635-grammar-as-a-foreign-language constituency_parsing#null#null
+sentic-lstm sentiment_analysis#sentihood#aspect$sentiment_analysis#sentihood#respect$sentiment_analysis#sentihood#aspects$sentiment_analysis#sentihood#the$sentiment_analysis#sentihood#the aspect$sentiment_analysis#sentihood#the sentence$sentiment_analysis#sentihood#a sentence$sentiment_analysis#sentihood#a negative sentiment$sentiment_analysis#sentihood#the aspects$sentiment_analysis#sentihood#strict accuracy
+S17-2083 stance_detection#rumoureval#accuracy$stance_detection#rumoureval#the accuracy$stance_detection#rumoureval#an accuracy
+1505.07818 sentiment_analysis#null#the averages$sentiment_analysis#null#electronics$sentiment_analysis#null#0.25$sentiment_analysis#null#a certain camera network$sentiment_analysis#null#accuracy$sentiment_analysis#null#convergence$sentiment_analysis#null#converges$sentiment_analysis#null#a collection
+D13-1007 lexical_normalization#null#accuracy$lexical_normalization#null#surface
+C18-1121 summarization#null#rouge-2 f1 score$summarization#null#0.98 % rouge-1$summarization#null#our goal$summarization#null#2.52 ( % ) rouge-1
+P16-2034 relationship_extraction#null#null
+D12-1110 relationship_extraction#null#f
+P17-1099 summarization#null#rouge-1$summarization#null#meteor scores$summarization#null#rouge$summarization#null#the form$summarization#null#timestep$summarization#null#the meteor metric$summarization#null#the rouge
+1704.00051 question_answering#squad#them$question_answering#squad#f emb
+43852 summarization#null#cr
+P16-1085 word_sense_disambiguation#null#null
+P18-1063 summarization#null#rouge$summarization#null#our goal$summarization#null#meteor$summarization#null#rouge-1$summarization#null#rouge - recall$summarization#null#terms$summarization#null#standard rouge-1
+1601.03651 relationship_extraction#null#f
+S17-2094 sentiment_analysis#null#the scores$sentiment_analysis#null#f p n 1 score$sentiment_analysis#null#the score
+S16-1181 amr_parsing#null#mat$amr_parsing#null#research$amr_parsing#null#the smatch scorer$amr_parsing#null#smatch v2.0$amr_parsing#null#a smatch f - score
+D17-1206 chunking#penn treebank#null
+pdf_id_HkAClQgA- summarization#null#41.16 rouge-1$summarization#null#the score$summarization#null#rouge$summarization#null#the rouge-1 score$summarization#null#a vector$summarization#null#the rouge-1$summarization#null#vectors
+P18-1014 summarization#null#the$summarization#null#either a word$summarization#null#the word$summarization#null#sentence - word$summarization#null#denote word$summarization#null#parameters$summarization#null#vector
+D15-1044 summarization#gigaword#rouge-2$summarization#gigaword#rouge-1$summarization#gigaword#rouge$summarization#gigaword#our goal
+1711.03953 language_modeling#null#international politics$language_modeling#null#the majority$language_modeling#null#its top predictions$language_modeling#null#the 6th example$language_modeling#null#the test set$language_modeling#null#the hyper - parameters$language_modeling#null#the property$language_modeling#null#the best performance$language_modeling#null#the validation$language_modeling#null#validation
+C14-1220 relationship_extraction#null#null
+P10-4014 word_sense_disambiguation#null#null
+D15-1063 timex_normalisation#null#null
+S18-1012 timex_normalisation timex_normalisation#null#a f1$timex_normalisation#null#a f1
+D15-1176 part-of-speech_tagging#null#january$part-of-speech_tagging#null#accuracies$part-of-speech_tagging#null#each character$part-of-speech_tagging#null#each character type$part-of-speech_tagging#null#pos accuracies$part-of-speech_tagging#null#pos accuracy$part-of-speech_tagging#null#an accuracy
+1607.03474 language_modeling#null#neural network parameters$language_modeling#null#network parameters$language_modeling#null#fixed total parameters$language_modeling#null#100 m characters$language_modeling#null#number$language_modeling#null#characters
+reside_emnlp18 relationship_extraction#null#null
+1704.08381 amr_parsing#ldc2015e86#smatch$amr_parsing#ldc2015e86#sbmt$amr_parsing#ldc2015e86#( impeach$amr_parsing#ldc2015e86#state$amr_parsing#ldc2015e86#smatch scores$amr_parsing#ldc2015e86#62.1 smatch
+wang13a sentiment_analysis#null#both accuracy$sentiment_analysis#null#accuracy
+1705.09980 amr_parsing#ldc2016e25#smatch$amr_parsing#ldc2016e25#something$amr_parsing#ldc2016e25#state$amr_parsing#ldc2016e25#the smatch system$amr_parsing#ldc2016e25#research
+P18-1015 summarization#null#rouge evaluation$summarization#null#rouge$summarization#null#the rouge-2 score
+f2205c56378e715d8d12c521d045c0756a76 named_entity_recognition#null#f
+1606.01549 question_answering#null#null
+1707.09098 question_answering#squad#memen$question_answering#squad#f$question_answering#squad#m$question_answering#squad#them$question_answering#squad#f1$question_answering#squad#the m
+S18-1150 taxonomy_learning#null#null
+C18-1146 summarization#null#rouge
+1801.00102 natural_language_inference#scitail#the test accuracy$natural_language_inference#scitail#89.3 % test accuracy$natural_language_inference#scitail#88.1 % test accuracy$natural_language_inference#scitail#the low accuracy scores$natural_language_inference#scitail#88.5 % accuracy$natural_language_inference#scitail#accuracy
+P16-1200 relationship_extraction#null#null
+N09-1009 dependency_parsing#null#tags$dependency_parsing#null#ours
+C16-1007 temporal_information_extraction#timebank#null
+5782-character-level-convolutional-networks-for-text-classification text_classification#yelp#null$sentiment_analysis#yelp#null
+P17-1101 summarization#null#rouge-2 f1$summarization#null#rouge f1$summarization#null#rouge  gram$summarization#null#our goal$summarization#null#24.58 rouge-2 f1
+S18-1146 taxonomy_learning#null#null
+1701.06538 machine_translation#null#bleu scores$machine_translation#null#bleu score
+1801.01900 word_sense_disambiguation#null#null
+S18-1148 taxonomy_learning#null#( map$taxonomy_learning#null#map
+P18-1064 summarization#gigaword#the words$summarization#gigaword#rouge-1$summarization#gigaword#rouge-2$summarization#gigaword#parameters
+1711.07341 question_answering#squad#f$question_answering#squad#m$question_answering#squad#them$question_answering#squad#esim
+P17-1043 amr_parsing#null#smatch f1$amr_parsing#null#smatch results$amr_parsing#null#a smatch score
+1708.02182 language_modeling#null#other forms$language_modeling#null#approximately one perplexity unit$language_modeling#null#validation$language_modeling#null#this problem$language_modeling#null#timestep t$language_modeling#null#the single - model perplexity results$language_modeling#null#activation regularization$language_modeling#null#the most popular methods$language_modeling#null#two additional hyperparameters$language_modeling#null#the capacity
+D18-1208 summarization#null#the storm$summarization#null#the order$summarization#null#rouge-1$summarization#null#the word$summarization#null#rouge-2$summarization#null#rouge-2 recall$summarization#null#the story
+1804.09769 sql_parsing#null#a concern$sql_parsing#null#place
+1803.09074 question_answering#race#race - h and race - m alternates$question_answering#race#namely race
+N18-1150 summarization#null#rouge-1$summarization#null#parameters$summarization#null#rouge$summarization#null#memories$summarization#null#producer$summarization#null#rouge scores$summarization#null#the cover$summarization#null#the word$summarization#null#mother
+1805.08092 question_answering#newsqa#em$question_answering#newsqa#f1$question_answering#newsqa#them$question_answering#newsqa#( em
+N16-1026 ccg_supertagging#ccgbank#accuracy$ccg_supertagging#ccgbank#the accuracy$ccg_supertagging#ccgbank#high accuracy$ccg_supertagging#ccgbank#account$ccg_supertagging#ccgbank#improvement inaccuracy
+E17-1038 sentiment_analysis#null#test accuracy$sentiment_analysis#null#both accuracy$sentiment_analysis#null#accuracy$sentiment_analysis#null#85.4 % accuracy score
+P16-1072 relationship_extraction#null#f
+C16-1238 relationship_extraction#null#f$relationship_extraction#null#f1
+1603.03793 dependency_parsing#null#use
+1807.01270 grammatical_error_correction#null#gec$grammatical_error_correction#null#62.42 gleu
+N18-1127 named_entity_recognition#null#null
+1706.03762 machine_translation#null#null$constituency_parsing#null#null
+1711.00106 question_answering#squad#f$question_answering#squad#∆em
+N16-1012 summarization#null#recall rouge$summarization#null#rouge-1
+1709.07432 language_modeling#wikitext-2#the model parameters$language_modeling#wikitext-2#the probability$language_modeling#wikitext-2#evaluation$language_modeling#wikitext-2#the original parameters$language_modeling#wikitext-2#the update rule$language_modeling#wikitext-2#this capability$language_modeling#wikitext-2#this problem$language_modeling#wikitext-2#a stabilization parameter$language_modeling#wikitext-2#a few hundred characters$language_modeling#hutter prize#the model parameters
+1711.05568 dialogue_act_classification#null#dar accuracy$dialogue_act_classification#null#the accuracy$dialogue_act_classification#null#each utterance$dialogue_act_classification#null#the dar accuracy$dialogue_act_classification#null#account$dialogue_act_classification#null#scratch
+1605.07725 sentiment_analysis#imdb#null
+N18-2045 sentiment_analysis#sentihood#a sentence$sentiment_analysis#sentihood#aspects$sentiment_analysis#sentihood#the sentence$sentiment_analysis#sentihood#aspect detection$sentiment_analysis#sentihood#aspect detection f
+N18-2102 summarization#null#rouge - l$summarization#null#rouge - reward models$summarization#null#the rouge - l scores$summarization#null#rougereward$summarization#null#rougesal
+1709.04250 dialogue_act_classification#null#each utterance$dialogue_act_classification#null#accuracy$dialogue_act_classification#null#the accuracy$dialogue_act_classification#null#account$dialogue_act_classification#null#an accuracy
+P15-1032 dependency_parsing#null#pos tags$dependency_parsing#null#the pos$dependency_parsing#null#tags$dependency_parsing#null#labels$dependency_parsing#null#problems$dependency_parsing#null#uas$dependency_parsing#null#pos$dependency_parsing#null#asgd$dependency_parsing#null#updates
+P15-1089 lexical_normalization#null#null
+D10-1117 dependency_parsing#null#use$dependency_parsing#null#tags$dependency_parsing#null#us
+language_understanding_paper natural_language_inference#race#91.3 % accuracy$question_answering#multinli#91.3 % accuracy$question_answering#race#91.3 % accuracy$natural_language_inference#multinli#91.3 % accuracy
+1611.01734 dependency_parsing#null#tags$dependency_parsing#null#mlps$dependency_parsing#null#las$dependency_parsing#null#a class$dependency_parsing#null#2 layers$dependency_parsing#null#labels
+P17-1168 question_answering#null#accuracy$question_answering#null#daily mail
+S18-1151 taxonomy_learning#null#( map$taxonomy_learning#null#a map
+P15-2141 amr_parsing#ldc2014t12#newswire$amr_parsing#ldc2014t12#the newswire section$amr_parsing#ldc2014t12#newswire section$amr_parsing#ldc2014t12#f 1 score
+Q18-1025 timex_normalisation#null#f1$timex_normalisation#null#f
+1603.09025 language_modeling#null#internal covariate shift$language_modeling#null#the next character$language_modeling#null#the hyperparameters$language_modeling#null#the γ parameters$language_modeling#null#the parameters$language_modeling#null#their parameters$language_modeling#null#character$language_modeling#null#model parameters$language_modeling#null#hyperparameters
+1711.04903 part-of-speech_tagging#ud#tagging accuracy$part-of-speech_tagging#ud#the tagging accuracy$part-of-speech_tagging#ud#the sentence - level accuracy$part-of-speech_tagging#ud#the test tagging accuracy$part-of-speech_tagging#ud#accuracy$part-of-speech_tagging#ud#the overall tagging accuracy$part-of-speech_tagging#ud#token tagging accuracy$part-of-speech_tagging#ud#poor tagging accuracy$part-of-speech_tagging#ud#occurrence
+1811.04210 question_answering#searchqa#parameters$question_answering#newsqa#parameters$question_answering#narrativeqa#parameters$question_answering#narrativeqa#lieu$question_answering#narrativeqa#the true start$question_answering#searchqa#m$question_answering#narrativeqa#them$question_answering#newsqa#lieu$question_answering#newsqa#m$question_answering#newsqa#the start
+1805.01052 constituency_parsing#null#null
+S18-1152 null#null#null
+1609.05284 question_answering#null#m$question_answering#null#them
+yu_gormley_dredze.nipsw.2014 null#null#null
+P16-1231 dependency_parsing#null#use$dependency_parsing#null#potheses$dependency_parsing#null#ways$dependency_parsing#null#uas / las$dependency_parsing#null#pos$dependency_parsing#null#las$dependency_parsing#null#problems$dependency_parsing#null#us
+1806.06228 multimodal_emotion_recognition#iemocap#trimodal accuracy$multimodal_emotion_recognition#iemocap#accuracy$multimodal_emotion_recognition#iemocap#the accuracy$multimodal_emotion_recognition#iemocap#best accuracy$multimodal_emotion_recognition#iemocap#a higher accuracy$multimodal_emotion_recognition#iemocap#class - wise accuracy
+P16-1123 relationship_extraction#null#f
+P15-1067 relation_prediction#null#mr$relation_prediction#null#hits@10
+P18-2038 named_entity_recognition#null#null
+ke18a question_answering#searchqa#them$question_answering#searchqa#terms
+N18-1140 question_answering#null#% f1$question_answering#null#f1
+1609.07561 dependency_parsing#null#93.6 uas$dependency_parsing#null#our case$dependency_parsing#null#las$dependency_parsing#null#us$dependency_parsing#null#use$dependency_parsing#null#cost$dependency_parsing#null#91.1 las$dependency_parsing#null#labels
+P04-1061 dependency_parsing#null#us$dependency_parsing#null#use$dependency_parsing#null#subspans
+N18-2046 grammatical_error_correction#null#null
+1805.05286 amr_parsing#null#smatch score$amr_parsing#null#data smatch jamr$amr_parsing#null#0.9 % smatch
+1708.00107 text_classification#sst-5#accuracy$text_classification#trec#accuracy$sentiment_analysis#sst-5#accuracy$sentiment_analysis#trec#accuracy
+64f0dab74295e5eb139c160ed79ff262558a constituency_parsing#null#null
+1808.09381 machine_translation#null#table$machine_translation#null#: bleu
+N16-1027 ccg_supertagging#ccgbank#better accuracy$ccg_supertagging#ccgbank#curran$ccg_supertagging#ccgbank#accuracies$ccg_supertagging#ccgbank#high accuracies
+1603.01360 named_entity_recognition#null#null
+1703.04816 question_answering#squad#terms$question_answering#squad#e$question_answering#newsqa#terms$question_answering#newsqa#e
+1705.08639 language_modeling#penn treebank#unexpected characters$language_modeling#penn treebank#special characters$language_modeling#penn treebank#450 k characters
+1712.03556 question_answering#squad#( f1$question_answering#squad#terms$question_answering#squad#( em$question_answering#squad#f1$question_answering#squad#em$question_answering#squad#em / f1
+D17-1108 temporal_information_extraction#null#the temporal graph$temporal_information_extraction#null#a temporal graph$temporal_information_extraction#null#the parentheses$temporal_information_extraction#null#the vagueness$temporal_information_extraction#null#temporal graphs$temporal_information_extraction#null#temporal awareness$temporal_information_extraction#null#two temporal graphs$temporal_information_extraction#null#temporal processing systems$temporal_information_extraction#null#the temporal awareness scores$temporal_information_extraction#null#more features
+5071-translating-embeddings-for-modeling-multi-relational-data relation_prediction#null#hits@10$relation_prediction#null#the hits@10
+1705.00108 named_entity_recognition#null#f
+1511.00830 sentiment_analysis#null#the accuracy$sentiment_analysis#null#" electronics$sentiment_analysis#null#" kitchen$sentiment_analysis#null#low accuracy$sentiment_analysis#null#a connection$sentiment_analysis#null#random kitchen sinks$sentiment_analysis#null#accuracy
+P18-2058 semantic_role_labeling#null#null
+D15-1279 text_classification#trec#the error rate
