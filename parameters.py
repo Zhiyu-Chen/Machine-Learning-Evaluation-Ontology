@@ -10,7 +10,7 @@ NUM_DIRS = 2 # unidirectional: 1, bidirectional: 2
 NUM_LAYERS = 2
 BATCH_SIZE = 10
 HRE = (UNIT == "sent") # hierarchical recurrent encoding
-EMBED = {"lookup": 100} # embeddings (char-cnn, char-rnn, lookup, sae)
+EMBED = {"sae": 100,"char-cnn":100} # embeddings (char-cnn, char-rnn, lookup, sae)
 EMBED_SIZE = sum(EMBED.values())
 HIDDEN_SIZE = 100
 DROPOUT = 0.5

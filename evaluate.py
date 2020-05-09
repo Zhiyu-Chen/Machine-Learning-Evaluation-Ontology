@@ -1,23 +1,15 @@
-from predict import *
+from predict_sent import *
 
 import argparse
 parser = argparse.ArgumentParser(description='LSTM-CRF', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-parser.add_argument("--CharToIdx", type=str, default='data/train.char_to_idx',
-                    help="char_to_idx")
-parser.add_argument("--WordToIdx", type=str, default='data/train.word_to_idx',
-                    help="word_to_idx")
-parser.add_argument("--TagToIdx", type=str, default='data/train.tag_to_idx',
-                    help="tag_to_idx")
-
 parser.add_argument("--test", type=str, default='data/test',
                      help="dataset to use")
-parser.add_argument("--checkpoint", type=str, default='data/model.epoch100',
-                     help="checkpoint")
+
 
 args = parser.parse_args()
 
-def evaluate(result, summary = False):
+def evaluate(result, summary = True):
     avg = defaultdict(float) # average
     tp = defaultdict(int) # true positives
     tpfn = defaultdict(int) # true positives + false negatives
@@ -38,7 +30,7 @@ def evaluate(result, summary = False):
         rc = (tp[y] / tpfn[y]) if tpfn[y] else 0
         avg["macro_pr"] += pr
         avg["macro_rc"] += rc
-        if not summary:
+        if summary:
             print("label = %s" % y)
             print("precision = %f (%d/%d)" % (pr, tp[y], tpfp[y]))
             print("recall = %f (%d/%d)" % (rc, tp[y], tpfn[y]))

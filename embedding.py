@@ -123,7 +123,7 @@ class embed(nn.Module):
             return h
 
         @staticmethod
-        def pos_encoding(dim, maxlen = 1000): # positional encoding
+        def pos_encoding(dim, maxlen = 1100): # positional encoding
             pe = Tensor(maxlen, dim)
             pos = torch.arange(0, maxlen, 1.).unsqueeze(1)
             k = torch.exp(-np.log(10000) * torch.arange(0, dim, 2.) / dim)

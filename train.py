@@ -14,7 +14,7 @@ parser.add_argument("--WordToIdx", type=str, default='data/train.word_to_idx',
                     help="word_to_idx")
 parser.add_argument("--TagToIdx", type=str, default='data/train.tag_to_idx',
                     help="tag_to_idx")
-parser.add_argument("--model_file", type=str, default='data/model',
+parser.add_argument("--model_file", type=str, default='data/phase1_model',
                      help="dataset to use")
 parser.add_argument("--valid", type=str, default='data/valid',
                      help="dataset to use")
