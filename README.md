@@ -18,6 +18,7 @@ token/tag token/tag token/tag ...
 Run phase 2 (IR-based relation extaction)
 
 - cd Relation_Extraction_IR
+- set the correct path to the collection of papers in metadata.py
 - download glove.6B.50d.txt pretrained embedding from http://nlp.stanford.edu/data/glove.6B.zip
 - to train and validate the IR based model, run convknrm_pointwise.py --emsize X --device GPU-ID --nbins 5 --pretrained_embedding path_to/glove.6B.Xd.txt
 X=50 when using glove.6B.50d.txt
