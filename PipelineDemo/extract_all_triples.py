@@ -1,5 +1,6 @@
-import sys
 import os
+
+import sys
 path = os.getcwd()
 print("Current Directory", path)
 print()
@@ -7,10 +8,7 @@ print()
 # parent directory
 parent = os.path.dirname(path)
 print("Parent directory", parent)
-
 sys.path.append(parent)
-
-#sys.path.append('/home/mohamedt/scientific_data')
 from model import *
 from utils import *
 import itertools
@@ -20,8 +18,9 @@ from torch.utils.data import Dataset,DataLoader
 import os
 #sys.path.append('/home/mohamedt/scientific_data/Relation_Extraction_IR')
 from convknrm_model import CONVKNRM
+from tqdm import tqdm
 
-parser = argparse.ArgumentParser(description='LSTM-CRF', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser = argparse.ArgumentParser(description='all_triples', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
 parser.add_argument("--CharToIdx", type=str, default='/home/mohamedt/scientific_data/data/train.char_to_idx',
                     help="char_to_idx")
@@ -30,7 +29,7 @@ parser.add_argument("--WordToIdx", type=str, default='/home/mohamedt/scientific_
 parser.add_argument("--TagToIdx", type=str, default='/home/mohamedt/scientific_data/data/train.tag_to_idx',
                     help="tag_to_idx")
 
-parser.add_argument("--test", type=str, default='/home/mohamedt/scientific_data/data/demo.input',
+parser.add_argument("--test", type=str, default='/home/mohamedt/scientific_data/data/demo.input1',
                      help="dataset to use")
 parser.add_argument("--checkpoint", type=str, default='/home/mohamedt/scientific_data/data/phase1_model.epoch70',
                      help="phase1 model")
@@ -46,7 +45,11 @@ parser.add_argument('--device', type=int, default=0)
 
 parser.add_argument('--nbins', type=int, default=5)
 
+parser.add_argument("--input_file", type=str, default='/home/mohamedt/scientific_data/data/data')
+parser.add_argument("--output_file", type=str, default='/home/mohamedt/scientific_data/data/demo.input')
 args = parser.parse_args()
+
+
 
 def kernal_mus(n_kernels):
     l_mu = [1]
@@ -206,51 +209,6 @@ def predict(filename, model, cti, wti, itt):
         return run_model(model, itt, data)
 
 
-def extract_TDM_triples(section,predicted_tags):
-    i=0
-    tasks=[]
-    datasets=[]
-    metrics=[]
-
-    while i<len(section):
-        task=[]
-        dataset=[]
-        metric=[]
-        if predicted_tags[i]=="task":
-            task.append(section[i].replace("<punct>",''))
-            while i<len(section) and predicted_tags[i+1]=="task":
-                i+=1
-                task.append(section[i].replace("<punct>",''))
-
-            task=" ".join(task)
-            tasks.append(task)
-
-        if i==len(section):
-            break
-
-        if predicted_tags[i]=="dataset":
-            dataset.append(section[i].replace("<punct>",''))
-            while i<len(section) and predicted_tags[i+1]=="dataset":
-                i+=1
-                dataset.append(section[i].replace("<punct>",''))
-            dataset=" ".join(dataset)
-            datasets.append(dataset)
-
-        if i==len(section):
-            break
-
-        if predicted_tags[i]=="metric":
-            metric.append(section[i].replace("<punct>",''))
-            while i<len(section) and predicted_tags[i+1]=="metric":
-                i+=1
-                metric.append(section[i].replace("<punct>",''))
-            metric=" ".join(metric)
-            metrics.append(metric)
-        i+=1
-
-    return tasks,datasets,metrics
-
-
 def extract_TDM_triples2(section,predicted_tags):
     i=0
     tasks=[]
@@ -297,89 +255,119 @@ def extract_TDM_triples2(section,predicted_tags):
 
 
 
-if __name__ == "__main__":
-
-    tasks=[]
-    datasets=[]
-    metrics=[]
-
-    for x0, y0, y1 in predict(args.test, *load_model()):
-
-        #print(x0.split(' '))
-        #print(y0)
-        #print(y1)
-        #print('\n')
-        sec_tasks,sec_datasets,sec_metrics=extract_TDM_triples2(x0.split(' '), y0)
-        tasks+=sec_tasks
-        datasets+=sec_datasets
-        metrics+=sec_metrics
-
-    tasks=list(set(tasks))
-    datasets=list(set(datasets))
-    metrics=list(set(metrics))
-
-    print(">>>>task candidates ",tasks)
-    print(">>>>datasets candidates ",datasets)
-    print(">>>>metrics candidates",metrics)
-
-    #print(paper_id)
-
-    candidates=[tasks,datasets,metrics]
-    TDM_candidates=list(itertools.product(*candidates))
-    print(">>>> TDM candidates ")
-    for cand in TDM_candidates:
-        print(cand)
-    only_one_candidate=False
-    if len(TDM_candidates)==1:
-        only_one_candidate=True
-        TDM_candidates.append(TDM_candidates[0])
 
 
-    TDM_candidates=[[' '.join(candidate),candidate] for candidate in TDM_candidates]
+file_name=args.input_file
+file_output=args.output_file
 
-    test_dataset = DataAndQuery(wv, word_to_index,
+file=open(file_name,'r')
+lines=file.readlines()
+nb_samples=len(lines)
+
+final_results=[]
+phase1_model, cti, wti, itt=load_model()
+with tqdm(total=nb_samples) as pbar:
+    for i in range(nb_samples):
+        #if i>5:
+        #    break
+        line = lines[i]
+        file = open(file_output, 'w')   
+        file.write(line)
+        file.close()
+
+        tasks = []
+        datasets = []
+        metrics = []
+
+        for x0, y0, y1 in predict(args.test, phase1_model, cti, wti, itt):
+            sec_tasks, sec_datasets, sec_metrics = extract_TDM_triples2(x0.split(' '), y0)
+            tasks += sec_tasks
+            datasets += sec_datasets
+            metrics += sec_metrics
+
+        tasks = list(set(tasks))
+        datasets = list(set(datasets))
+        metrics = list(set(metrics))
+
+        #print(">>>>task candidates ", tasks)
+        #print(">>>>datasets candidates ", datasets)
+        #print(">>>>metrics candidates", metrics)
+
+        #print(paper_id)
+        if len(tasks)==0:
+            tasks=['null']
+        if len(datasets)==0:
+            datasets=['null']
+        if len(metrics)==0:
+            metrics=['null']
+
+        candidates = [tasks, datasets, metrics]
+        TDM_candidates = list(itertools.product(*candidates))
+        #print(">>>> TDM candidates ")
+        #for cand in TDM_candidates:
+        #    print(cand)
+        only_one_candidate = False
+        if len(TDM_candidates) == 1:
+            only_one_candidate = True
+            TDM_candidates.append(TDM_candidates[0])
+
+        TDM_candidates = [[' '.join(candidate), candidate] for candidate in TDM_candidates]
+
+        test_dataset = DataAndQuery(wv, word_to_index,
                                 index_to_word, paper_id, TDM_candidates)
-    print(len(test_dataset))
-    batch_size=32
-    test_iter = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
+        #print(len(test_dataset))
+        batch_size = 32
+        test_iter = DataLoader(test_dataset, batch_size=batch_size, shuffle=True)
 
-    args.index_to_word = test_dataset.index_to_word
-    args.wv = test_dataset.wv
+        if i==0:
+            args.index_to_word = test_dataset.index_to_word
+            args.wv = test_dataset.wv
 
-    model = CONVKNRM(args).to(args.device)
-    save_path = args.phase2_model
+            model = CONVKNRM(args).to(args.device)
+            save_path = args.phase2_model
 
-    model= load_checkpoint_for_eval(model,  save_path)
+            model = load_checkpoint_for_eval(model, save_path)
 
-    m = nn.Sigmoid()
+            m = nn.Sigmoid()
 
-    all_outputs=[]
-    all_labels=[]
-    all_triples=[]
+        all_outputs = []
+        all_labels = []
+        all_triples = []
 
-    for batch_desc,batch_query, labels,triples in test_iter:
-        batch_desc, batch_query = batch_desc.to(
-            args.device), batch_query.to(args.device)
+        for batch_desc, batch_query, labels, triples in test_iter:
+            batch_desc, batch_query = batch_desc.to(
+                args.device), batch_query.to(args.device)
 
-        batch_query = torch.squeeze(batch_query, 1)
-        batch_query = torch.squeeze(batch_query, 1)
-        batch_desc = torch.squeeze(batch_desc, 1)
-        batch_desc = torch.squeeze(batch_desc, 1)
+            batch_query = torch.squeeze(batch_query, 1)
+            batch_query = torch.squeeze(batch_query, 1)
+            batch_desc = torch.squeeze(batch_desc, 1)
+            batch_desc = torch.squeeze(batch_desc, 1)
 
+            outputs = model(batch_query, batch_desc).to(args.device)
+            outputs = m(outputs)
+            all_outputs += outputs.tolist()
+            all_labels += labels
+            all_triples += triples
 
-        outputs = model(batch_query, batch_desc).to(args.device)
-        outputs=m(outputs)
-        all_outputs += outputs.tolist()
-        all_labels += labels
-        all_triples+=triples
+        predicted_triples = [[all_triples[i], all_outputs[i]] for i in range(len(all_triples)) if all_outputs[i] > 0.1]
+        predicted_triples.sort(key=lambda x: x[1], reverse=True)
+        predicted_triples=predicted_triples[:10]
 
-    predicted_triples=[[all_triples[i],all_outputs[i]] for i in range(len(all_triples)) if all_outputs[i]>0.1]
-    predicted_triples.sort(key=lambda x: x[1],reverse=True)
-    #formated_for_next_stage='$'.join([label[0] for label in predicted_triples])
-    if only_one_candidate and len(predicted_triples)>0:
-        predicted_triples=[predicted_triples[0]]
-    print('>>>>Extracted TDS ')
-    for trip in predicted_triples:
-        print(trip)
-    print(len(predicted_triples))
+        if only_one_candidate and len(predicted_triples) > 0:
+            predicted_triples = [predicted_triples[0]]
 
+        formated_for_next_stage = '$'.join([label[0] for label in predicted_triples])
+        formated_for_next_stage=paper_id+' '+formated_for_next_stage
+        final_results.append(formated_for_next_stage)
+        #print(final_results)
+        pbar.update(1)
+
+    
+
+        #print('>>>>Extracted TDS ')
+        #for trip in predicted_triples:
+        #    print(trip)
+        #print(len(predicted_triples))
+
+with open('kb_input.txt','w') as f:
+  f.write('\n'.join(final_results))
