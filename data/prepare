@@ -1,5 +1,7 @@
 shuf all.data > data
-head -10 data > test
-sed -n '11,20p' data > valid
-sed -n '21,30p' data > train
+head -53 data > test
+#sed -n '11,20p' data > valid
+#sed -n '21,280p' data > train
 #tail +5 data > train
+head -53 data > valid
+sed -n '54,269p' data > train
