@@ -1,7 +1,7 @@
 import os
 
-base_dir = '/home/colozoy/exp/sci_data/science-result-extractor'  #dir to the acl paper data
-proj_dir = '/home/colozoy/dropbox_codes/NLP/scientific_data' #dir to the project
+base_dir = './'  #dir to the acl paper data
+proj_dir = './' #dir to the project
 
 cat_NLP_TDM_path = os.path.join(base_dir,'data/exp/few-shot-setup','NLP-TDMS')
 kb_dir = os.path.join(base_dir,'data/NLP-TDMS/kb')
