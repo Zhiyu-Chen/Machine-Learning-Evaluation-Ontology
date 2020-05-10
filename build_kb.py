@@ -52,7 +52,7 @@ class SDO(object):
     def build_demo(self):
         paper_title, paper_task, paper_dataset, paper_metric, paper_scores, paper_entities = pickle.load(
             open(paper_entity_path, 'rb'))
-        f = open('./data/kb_input.txt','r')
+        f = open('./PipelineDemo/kb_input.txt','r')
         result_idx = 0
         for line in f:
             print(line)
