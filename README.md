@@ -1,6 +1,5 @@
 # requirement
-
-please install the library/software:
+The code was implemented under Linux system. Please install the following libraries/softwares:
 
 - Python 3.0 
 - pytorch (https://github.com/pytorch/pytorch)
