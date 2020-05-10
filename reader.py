@@ -5,7 +5,6 @@ from metadata import *
 from glob import glob
 import json
 from fuzzywuzzy import fuzz
-import textdistance
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
