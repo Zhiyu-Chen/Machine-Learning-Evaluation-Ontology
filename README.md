@@ -1,6 +1,6 @@
 # requirement
 
-please install the library:
+please install the library/software:
 
 - Python 3.0 
 - pytorch (https://github.com/pytorch/pytorch)
