@@ -2,10 +2,15 @@
 
 please install the library:
 
+- Python 3.0 
 - pytorch (https://github.com/pytorch/pytorch)
 - pytorch_transformers (version 1.1.0 https://github.com/huggingface/transformers/releases/tag/1.1.0)
 - MatchZoo-py(https://github.com/NTMC-Community/MatchZoo-py/tree/master/matchzoo)
 - sklearn (https://scikit-learn.org/stable/)
+- pandas
+- numpy
+- fuzzywuzzy (https://github.com/seatgeek/fuzzywuzzy)
+- spaCy (https://spacy.io/)
 
 
 # sci_data
@@ -49,4 +54,4 @@ Pipeline Demo
 Build KB
 
 - make sure the output from the 2nd stage is in "./data/kb_input.txt'"
-- run in command line with "python build_kb.py"
+- run in command line with "python build_kb.py", and the file "demo_db.owl" will be generated as the knowledge base.
