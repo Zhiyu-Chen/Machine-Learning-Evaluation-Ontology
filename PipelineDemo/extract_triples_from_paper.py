@@ -309,7 +309,7 @@ if __name__ == "__main__":
         #print(y0)
         #print(y1)
         #print('\n')
-        sec_tasks,sec_datasets,sec_metrics=extract_TDM_triples2(x0.split(' '), y0)
+        sec_tasks,sec_datasets,sec_metrics=extract_TDM_triples2(x0.split(' '), y1)
         tasks+=sec_tasks
         datasets+=sec_datasets
         metrics+=sec_metrics
