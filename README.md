@@ -1,3 +1,13 @@
+# requirement
+
+please install the library:
+
+- pytorch (https://github.com/pytorch/pytorch)
+- pytorch_transformers (version 1.1.0 https://github.com/huggingface/transformers/releases/tag/1.1.0)
+- MatchZoo-py(https://github.com/NTMC-Community/MatchZoo-py/tree/master/matchzoo)
+- sklearn (https://scikit-learn.org/stable/)
+
+
 # sci_data
 
 Run phase 1 (sientific entities recognition using CRF-LSTM)
@@ -23,6 +33,10 @@ Run phase 2 (IR-based relation extaction)
 - to train and validate the IR based model, run convknrm_pointwise.py --emsize X --device GPU-ID --nbins 5 --pretrained_embedding path_to/glove.6B.Xd.txt
 X=50 when using glove.6B.50d.txt
 
+Run phase 2 (NLI-based relation extaction)
+
+- set the relation type variable "relation_type" in nli_relation.py. "TD" for task-dataset relationship and "DM" for dataset-metric relationship.
+- run in command line with "python nli_relation.py".
 
 Pipeline Demo
 
@@ -32,3 +46,7 @@ Pipeline Demo
 - to extract triples from all the papers collection, and form the input file kb_input.txt to the knowledge base, run python3 extract_all_triples.py   
 
 
+Build KB
+
+- make sure the output from the 2nd stage is in "./data/kb_input.txt'"
+- run in command line with "python build_kb.py"
