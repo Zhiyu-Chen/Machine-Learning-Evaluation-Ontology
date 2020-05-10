@@ -10,6 +10,7 @@ The code was implemented under Linux system. Please install the following librar
 - numpy
 - fuzzywuzzy (https://github.com/seatgeek/fuzzywuzzy)
 - spaCy (https://spacy.io/)
+- Owlready2(https://pypi.org/project/Owlready2/)
 
 
 # sci_data
