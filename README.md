@@ -1,6 +1,6 @@
 # requirement
 
-please install the library:
+please install the library/software:
 
 - Python 3.0 
 - pytorch (https://github.com/pytorch/pytorch)
@@ -54,4 +54,4 @@ Pipeline Demo
 Build KB
 
 - make sure the output from the 2nd stage is in "./data/kb_input.txt'"
-- run in command line with "python build_kb.py", and the file "demo_db.owl" will be generated as the knowledge base.
+- run in command line with "python build_kb.py", and the file "./data/sdo/demo_db.owl" will be generated as the knowledge base.
