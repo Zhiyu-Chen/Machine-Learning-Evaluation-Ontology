@@ -16,7 +16,7 @@ The code was implemented under Linux system. Please install the following librar
 
 The SDO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
 
-# sci_data
+# Scientific Datasets Knowledge Base (SDKB) Construction
 
 Run phase 1 (sientific entities recognition using CRF-LSTM)
 
