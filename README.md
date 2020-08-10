@@ -12,6 +12,9 @@ The code was implemented under Linux system. Please install the following librar
 - spaCy (https://spacy.io/)
 - Owlready2(https://pypi.org/project/Owlready2/)
 
+# Scientific Datasets Ontology (SDO)
+
+The SDO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
 
 # sci_data
 
