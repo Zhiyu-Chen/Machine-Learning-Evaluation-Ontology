@@ -11,7 +11,7 @@ taskKB_path = os.path.join(kb_dir,'taskKB.tsv')
 
 NLP_TDM_path = os.path.join(base_dir,'data','NLP-TDMS')
 onto_dir = os.path.join(proj_dir,'data/sdo/')
-onto_fname = 'scientific_dataset.owx'
+onto_fname = 'mleo.owx'
 
 #output
 vote_rs_path = os.path.join(proj_dir,'data/sdo/voteResult.tsv')

@@ -14,9 +14,16 @@ The code was implemented under Linux system. Please install the following librar
 
 # Machine Learning Evaluation Ontology (MLEO)
 
-The MLEO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
+The MLEO ontology definition is in ./data/sdo/mleo.owx
+To explore the full ontology, you can load the file into [Protégé](https://protege.stanford.edu/) or [WebProtégé](https://webprotege.stanford.edu/).
+
+
 
 # Machine Learning Evaluation Knowledge Base (MEKB) Construction
+
+To explore the constructed demo MEKB, you can load the file "./data/sdo/demo_db.owl" into Protégé or WebProtégé.
+Here we show an example of ![Result individual](./figures/result_example.png).
+
 
 Run phase 1 (scientific entities recognition using CRF-LSTM)
 

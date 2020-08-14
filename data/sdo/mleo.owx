@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ontologies/2020/1/scientific_dataset"
+     xml:base="http://www.semanticweb.org/ontologies/2020/1/machine_learning_evaluation_ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/ontologies/2020/1/scientific_dataset">
+     ontologyIRI="http://www.semanticweb.org/ontologies/2020/1/machine_learning_evaluation_ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2020/1/machine_learning_evaluation_ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -2431,7 +2432,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Alex_Krizhevsky"/>
-        <Literal>akrizhevsky@gmail.com</Literal>
+        <Literal xml:lang="gmail.com">akrizhevsky</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2451,7 +2452,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Alon_Halevy"/>
-        <Literal>halevy@google.com</Literal>
+        <Literal xml:lang="google.com">halevy</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2491,7 +2492,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Chandra_Sekhar_Bhagavatula"/>
-        <Literal>csbhagav@u.northwestern.edu</Literal>
+        <Literal xml:lang="u.northwestern.edu">csbhagav</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2516,7 +2517,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Chung_Wu"/>
-        <Literal>chungwu@gmail.com</Literal>
+        <Literal xml:lang="gmail.com">chungwu</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2541,7 +2542,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Doug_Downey"/>
-        <Literal>ddowney@eecs.northwestern.edu</Literal>
+        <Literal xml:lang="eecs.northwestern.edu">ddowney</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2566,7 +2567,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Fei_Wu"/>
-        <Literal>wufei@google.com</Literal>
+        <Literal xml:lang="google.com">wufei</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2596,7 +2597,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Gengxin_Miao"/>
-        <Literal>miao@umail.ucsb.edu</Literal>
+        <Literal xml:lang="umail.ucsb.edu">miao</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2666,7 +2667,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Jayant_Madhavan"/>
-        <Literal>jayant@google.com</Literal>
+        <Literal xml:lang="google.com">jayant</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2686,7 +2687,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Krisztian_Balog"/>
-        <Literal>krisztian.balog@uis.no</Literal>
+        <Literal xml:lang="uis.no">krisztian.balog</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2716,7 +2717,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Marius_Pasca"/>
-        <Literal>mars@google.com</Literal>
+        <Literal xml:lang="google.com">mars</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2741,7 +2742,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Michael_J._Cafarella"/>
-        <Literal>mjc@cs.washington.edu</Literal>
+        <Literal xml:lang="cs.washington.edu">mjc</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2766,7 +2767,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Nodira_Khoussainova"/>
-        <Literal>nodira@cs.washington.edu</Literal>
+        <Literal xml:lang="cs.washington.edu">nodira</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2826,7 +2827,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Percy_Liang"/>
-        <Literal>pliang@cs.stanford.edu</Literal>
+        <Literal xml:lang="cs.stanford.edu">pliang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2846,7 +2847,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Petros_Venetis"/>
-        <Literal>venetis@cs.stanford.edu</Literal>
+        <Literal xml:lang="cs.stanford.edu">venetis</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2866,7 +2867,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Pranav_Rajpurkar"/>
-        <Literal>pranavsr@cs.stanford.edu</Literal>
+        <Literal xml:lang="cs.stanford.edu">pranavsr</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2896,7 +2897,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Robin_Jia"/>
-        <Literal>robinjia@cs.stanford.edu</Literal>
+        <Literal xml:lang="cs.stanford.edu">robinjia</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -2981,7 +2982,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Shuo_Zhang"/>
-        <Literal>shuo.zhang@uis.no</Literal>
+        <Literal xml:lang="uis.no">shuo.zhang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3011,7 +3012,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Thanapon_Noraset"/>
-        <Literal>nor.thanapon@u.northwestern.edu</Literal>
+        <Literal xml:lang="u.northwestern.edu">nor.thanapon</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3091,7 +3092,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#Warren_Shen"/>
-        <Literal>whshen@google.com</Literal>
+        <Literal xml:lang="google.com">whshen</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3121,7 +3122,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#aaron_courville"/>
-        <Literal>courvila@iro.umontreal.ca</Literal>
+        <Literal xml:lang="iro.umontreal.ca">courvila</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3141,7 +3142,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#alex_lamb"/>
-        <Literal>lambalex@iro.umontreal.ca</Literal>
+        <Literal xml:lang="iro.umontreal.ca">lambalex</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3161,7 +3162,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#amir_najaf"/>
-        <Literal>najafy@ce.sharif.edu</Literal>
+        <Literal xml:lang="ce.sharif.edu">najafy</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3201,7 +3202,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#christopher_beckham"/>
-        <Literal>christopher.j.beckham@gmail.com</Literal>
+        <Literal xml:lang="gmail.com">christopher.j.beckham</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3231,7 +3232,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#david_lopez_paz"/>
-        <Literal>dlp@fb.com</Literal>
+        <Literal xml:lang="fb.com">dlp</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3281,7 +3282,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#ioannis_mitliagkas"/>
-        <Literal>imitliagkas@gmail.com</Literal>
+        <Literal xml:lang="gmail.com">imitliagkas</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3316,7 +3317,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#leon_bottou"/>
-        <Literal>leonb@fb.com</Literal>
+        <Literal xml:lang="fb.com">leonb</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3411,7 +3412,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#vikas_verma"/>
-        <Literal>vikas.verma@aalto.fi</Literal>
+        <Literal xml:lang="aalto.fi">vikas.verma</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3431,7 +3432,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#yann_lecun"/>
-        <Literal>yann@cs.nyu.edu</Literal>
+        <Literal xml:lang="cs.nyu.edu">yann</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -3451,7 +3452,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEmail"/>
         <NamedIndividual IRI="#yoshua_bengio"/>
-        <Literal>yoshua.umontreal@gmail.com</Literal>
+        <Literal xml:lang="gmail.com">yoshua.umontreal</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasFirstName"/>
@@ -5564,5 +5565,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
