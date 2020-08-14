@@ -16,13 +16,14 @@ The code was implemented under Linux system. Please install the following librar
 
 The MLEO ontology definition is in ./data/sdo/mleo.owx
 To explore the full ontology, you can load the file into [Protégé](https://protege.stanford.edu/) or [WebProtégé](https://webprotege.stanford.edu/).
-
+We have 5 core entities: Task, Dataset, Result, Model and Paper.
+Here we show the entity graph of NLPTask which is a subclass of Task: ![NLPTask](./figures/NLPTask.png)
 
 
 # Machine Learning Evaluation Knowledge Base (MEKB) Construction
 
 To explore the constructed demo MEKB, you can load the file "./data/sdo/demo_db.owl" into Protégé or WebProtégé.
-Here we show an example of ![Result individual](./figures/result_example.png).
+Here we show an example of Result individual: ![Result individual](./figures/result_example.png)
 
 
 Run phase 1 (scientific entities recognition using CRF-LSTM)
