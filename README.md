@@ -1,4 +1,4 @@
-# requirement
+# Requirement
 The code was implemented under Linux system. Please install the following libraries/softwares:
 
 - Python 3.0 
@@ -14,7 +14,7 @@ The code was implemented under Linux system. Please install the following librar
 
 # Machine Learning Evaluation Ontology (MLEO)
 
-The SDO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
+The MLEO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
 
 # Machine Learning Evaluation Knowledge Base (MEKB) Construction
 
