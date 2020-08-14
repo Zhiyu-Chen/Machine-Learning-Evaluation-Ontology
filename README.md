@@ -12,13 +12,13 @@ The code was implemented under Linux system. Please install the following librar
 - spaCy (https://spacy.io/)
 - Owlready2(https://pypi.org/project/Owlready2/)
 
-# Scientific Datasets Ontology (SDO)
+# Machine Learning Evaluation Ontology (MLEO)
 
 The SDO ontology definition is in ./scientific_data/data/sdo/scientific_dataset.owx
 
-# Scientific Datasets Knowledge Base (SDKB) Construction
+# Machine Learning Evaluation Knowledge Base (MEKB) Construction
 
-Run phase 1 (sientific entities recognition using CRF-LSTM)
+Run phase 1 (scientific entities recognition using CRF-LSTM)
 
 - Training data should be formatted as below:
 token/tag token/tag token/tag ...
