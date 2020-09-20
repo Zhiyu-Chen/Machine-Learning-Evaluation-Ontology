@@ -14,7 +14,7 @@ The code was implemented under Linux system. Please install the following librar
 
 # Machine Learning Progress Ontology (MLPO)
 
-The MLPO ontology definition is in ./data/sdo/mlpo.owx
+The MLPO ontology definition is in [here](https://github.com/Zhiyu-Chen/Machine-Learning-Progress-Ontology/blob/master/data/sdo/mlpo.owx).
 To explore the full ontology, you can load the file into [Protégé](https://protege.stanford.edu/) or [WebProtégé](https://webprotege.stanford.edu/).
 We have 5 core entities: Task, Dataset, Result, Model and Paper.
 Here we show the entity graph of NLPTask which is a subclass of Task: ![NLPTask](./figures/NLPTask.png)
